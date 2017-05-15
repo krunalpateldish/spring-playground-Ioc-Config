@@ -21,7 +21,7 @@ public class WorkCounterController {
     }
 
 
-    @PostMapping("/word/count")
+    @PostMapping("/words/count")
     public HashMap<String, Integer> getWodCount(@RequestBody String inputString){
         HashMap<String, Integer> count= counter.count(inputString);
 
