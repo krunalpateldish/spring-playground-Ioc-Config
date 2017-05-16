@@ -20,13 +20,12 @@ public class WorkCounterController {
         this.counter = counter;
     }
 
-
     @PostMapping("/words/count")
-    public HashMap<String, Integer> getWodCount(@RequestBody String inputString){
+
+     public HashMap<String, Integer> getWodCount(@RequestBody String inputString){
         HashMap<String, Integer> count= counter.count(inputString);
 
         return count;
 
     }
-
 }

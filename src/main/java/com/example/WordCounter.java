@@ -27,7 +27,6 @@ public class WordCounter {
                         counterHashMap.put(splitted[i], (Integer) counterHashMap.get(splitted[i]) + 1);
                     }
                 }
-
                 return (HashMap<String, Integer>) counterHashMap;
 
             }
